@@ -1,0 +1,85 @@
+{
+  "templateid" : "SnowflakeSQLAPI",
+  "steps" : [ {
+    "function" : "POST",
+    "url" : "@baseUrl/api/statements?requestId=@uuid&async=true&pageSize=10",
+    "proxyServer" : null,
+    "request" : {
+      "headers" : [ {
+        "attribute" : "User-Agent",
+        "value" : ""
+      }, {
+        "attribute" : "X-Snowflake-Authorization-Token-Type",
+        "value" : ""
+      } ],
+      "contentType" : "application/json",
+      "body" : "{ \"statement\": \"\", \"timeout\": 10, \"resultSetMetaData\": { \"format\": \"json\" },\"database\": \"\", \"schema\": \"\", \"warehouse\": \"\", \"bindings\": {},\"parameters\": { \"timezone\": \"\", \"query_tag\": \"\", \"binary_output_format\": \"\", \"date_output_format\": \"\", \"time_output_format\": \"\", \"timestamp_output_format\": \"\", \"timestamp_ltz_output_format\": \"\", \"timestamp_ntz_output_format\": \"\", \"timestamp_tz_output_format\": \"\" }}",
+      "fileName" : null
+    },
+    "response" : {
+      "contentType" : "application/json",
+      "variables" : [ ],
+      "ignoreResult" : false,
+      "stepCompletionCode" : 200,
+      "responseDataCheck" : null,
+      "fileName" : null
+    }
+  }, {
+    "function" : "GET",
+    "url" : "@baseUrl/api/statements/:statementHandle?requestId=@uuid&page=2&pageSize=10",
+    "proxyServer" : null,
+    "request" : {
+      "headers" : [ {
+        "attribute" : "User-Agent",
+        "value" : ""
+      }, {
+        "attribute" : "X-Snowflake-Authorization-Token-Type",
+        "value" : ""
+      } ],
+      "contentType" : "application/json",
+      "body" : null,
+      "fileName" : null
+    },
+    "response" : {
+      "contentType" : "application/json",
+      "variables" : [ ],
+      "ignoreResult" : false,
+      "stepCompletionCode" : 200,
+      "responseDataCheck" : null,
+      "fileName" : null
+    }
+  }, {
+    "function" : "POST",
+    "url" : "@baseUrl/api/statements/:statementHandle/cancel?requestId=@uuid",
+    "proxyServer" : null,
+    "request" : {
+      "headers" : [ {
+        "attribute" : "User-Agent",
+        "value" : ""
+      }, {
+        "attribute" : "X-Snowflake-Authorization-Token-Type",
+        "value" : ""
+      } ],
+      "contentType" : "application/json",
+      "body" : "{}",
+      "fileName" : null
+    },
+    "response" : {
+      "contentType" : "application/json",
+      "variables" : [ ],
+      "ignoreResult" : false,
+      "stepCompletionCode" : 200,
+      "responseDataCheck" : null,
+      "fileName" : null
+    }
+  } ],
+  "variables" : [ {
+    "name" : "@baseUrl",
+    "value" : "??????"
+  }, {
+    "name" : "@uuid",
+    "value" : "??????"
+  } ],
+  "environmentVariables" : [ ],
+  "properties" : [ ]
+}

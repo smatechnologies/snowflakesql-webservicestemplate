@@ -1,16 +1,29 @@
-# Project Name
-Project description
+# Snowflake SQL WebServices template
+This template allows you to make calls to the Snowflake SQL API to access and update data in a Snowflake database.
+
+# Prerequisites
+* OpCon 18.3+
+* WebServices Connector 20.1+ (recommended)
+* Snowflake SQL API (https://api.developers.snowflake.com)
+
+# Instructions
+Import the template to a new Web Services connector job in OpCon.  The template contains 3 steps:  
+
+Variables -
+ * @snowflakesqltoken - Token for authorization to the Snowflake SQL API (store in an encrypted global property)
+ * @baseURL - The url for communicating with the Snowflake SQL API (store in a global property)
+ * @uuid - Unique id for the API call ([[$TIME HHMMSS]] for example)
+
+"Step 1" Submits a SQL statement for execution.
+
+"Step 2" Checks the status of the execution of a statement, and returns a result set.
+
+"Step 3" Cancels the execution of a statement. 
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
-
-# Prerequisites
-
-
-# Instructions
-
 
 # License
 Copyright 2019 SMA Technologies

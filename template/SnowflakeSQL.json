@@ -11,6 +11,9 @@
       }, {
         "attribute" : "X-Snowflake-Authorization-Token-Type",
         "value" : ""
+      }, {
+        "attribute" : "Authorization",
+        "value" : "@snowflakesqltoken"
       } ],
       "contentType" : "application/json",
       "body" : "{ \"statement\": \"\", \"timeout\": 10, \"resultSetMetaData\": { \"format\": \"json\" },\"database\": \"\", \"schema\": \"\", \"warehouse\": \"\", \"bindings\": {},\"parameters\": { \"timezone\": \"\", \"query_tag\": \"\", \"binary_output_format\": \"\", \"date_output_format\": \"\", \"time_output_format\": \"\", \"timestamp_output_format\": \"\", \"timestamp_ltz_output_format\": \"\", \"timestamp_ntz_output_format\": \"\", \"timestamp_tz_output_format\": \"\" }}",
@@ -35,6 +38,9 @@
       }, {
         "attribute" : "X-Snowflake-Authorization-Token-Type",
         "value" : ""
+      }, {
+        "attribute" : "Authorization",
+        "value" : "@snowflakesqltoken"
       } ],
       "contentType" : "application/json",
       "body" : null,
@@ -59,6 +65,9 @@
       }, {
         "attribute" : "X-Snowflake-Authorization-Token-Type",
         "value" : ""
+      }, {
+        "attribute" : "Authorization",
+        "value" : "@snowflakesqltoken"
       } ],
       "contentType" : "application/json",
       "body" : "{}",
@@ -78,6 +87,9 @@
     "value" : "??????"
   }, {
     "name" : "@uuid",
+    "value" : "??????"
+  }, {
+    "name" : "@snowflakesqltoken",
     "value" : "??????"
   } ],
   "environmentVariables" : [ ],
